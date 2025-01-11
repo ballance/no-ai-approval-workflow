@@ -1,0 +1,92 @@
+Apple
+Apricot
+Avocado
+Banana
+Blackberry
+Blueberry
+Cantaloupe
+Cherry
+Clementine
+Coconut
+Cranberry
+Currant
+Date
+Dragonfruit
+Durian
+Elderberry
+Fig
+Gooseberry
+Grape
+Grapefruit
+Guava
+Honeydew melon
+Jackfruit
+Kiwi
+Kumquat
+Lemon
+Lime
+Lychee
+Mango
+Mulberry
+Nectarine
+Orange
+Papaya
+Passionfruit
+Peach
+Pear
+Persimmon
+Pineapple
+Plum
+Pomegranate
+Raspberry
+Redcurrant
+Starfruit (Carambola)
+Strawberry
+Tangerine
+Watermelon
+Artichoke
+Arugula
+Asparagus
+Beet
+Bell pepper
+Bok choy
+Broccoli
+Brussels sprouts
+Cabbage
+Carrot
+Cauliflower
+Celery
+Chard (Swiss chard)
+Collard greens
+Corn
+Cucumber
+Daikon radish
+Eggplant
+Endive
+Fennel
+Garlic
+Green bean
+Kale
+Kohlrabi
+Leek
+Lettuce
+Mushroom
+Mustard greens
+Okra
+Onion
+Parsnip
+Pea
+Potato
+Pumpkin
+Radish
+Rutabaga
+Scallion
+Shallot
+Spinach
+Squash
+Sweet potato
+Tomato
+Turnip
+Watercress
+Yam
+Zucchini
