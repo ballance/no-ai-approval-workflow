@@ -25,3 +25,6 @@ The **No-AI Approval Workflow** is a simple, customizable API-based project desi
 ```bash
 git clone https://github.com/ballance/no-ai-approval-workflow.git
 cd no-ai-approval-workflow
+gradle clean bootRun
+```
+Navigate to http://localhost:8080/matcher?input=Eggplant
