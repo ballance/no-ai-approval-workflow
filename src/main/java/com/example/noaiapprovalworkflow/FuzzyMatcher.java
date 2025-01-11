@@ -2,6 +2,7 @@ package com.example.noaiapprovalworkflow;
 
 import org.apache.commons.text.similarity.LevenshteinDistance;
 import org.springframework.core.io.ClassPathResource;
+import org.yaml.snakeyaml.util.Tuple;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -30,8 +31,7 @@ public class FuzzyMatcher {
                     .collect(Collectors.toSet());
         }
     }
-
-    public String fuzzyMatch(String input) {
+    public Tuple<Integer, String> fuzzyMatch(String input) {
         input = input.toLowerCase();
         String bestMatch = "";
         int bestDistance = Integer.MAX_VALUE;
@@ -43,23 +43,12 @@ public class FuzzyMatcher {
                 bestMatch = word;
             }
         }
-        if (bestDistance <= 2) {
-            String.format(input + "' is '%s' with a distance of %s", bestMatch, bestDistance);
-        }
-        return String.format("no match, best distance of %d", bestDistance);
+        return new Tuple<>(bestDistance, bestMatch);
     }
 
-    public String getLevenshteinDistance(String input)
-    {
-        try {
-            FuzzyMatcher matcher = new FuzzyMatcher();
-            matcher.loadDictionary("dictionary.txt");
-
-            String match = matcher.fuzzyMatch(input);
-            return String.format("Fuzzy match result: %s ", match);
-
-        } catch (IOException e) {
-            return "error";
-        }
+    public Tuple<Integer, String> getLevenshteinDistance(String input) throws IOException {
+        FuzzyMatcher matcher = new FuzzyMatcher();
+        matcher.loadDictionary("dictionary.txt");
+        return matcher.fuzzyMatch(input);
     }
 }
